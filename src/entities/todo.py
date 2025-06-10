@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from sqlalchemy import Column, String, Boolean, DateTime, ForeignKey, Enum
 from sqlalchemy.dialects.postgresql import UUID, ARRAY
 
+from ..database.core import Base
 
 class Priority(enum.Enum):
     Normal = 0
